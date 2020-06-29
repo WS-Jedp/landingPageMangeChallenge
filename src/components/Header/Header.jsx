@@ -23,8 +23,13 @@ const Header = () => {
     else menuResponsive.style.bottom = '-100%';
 
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 200) header.style.backgroundColor = '#fafafa';
-      else header.style.backgroundColor = 'rgba(0,0,0,0)';
+      if (window.pageYOffset > 200) {
+        header.style.backgroundColor = '#fafafa';
+        header.style.boxShadow = '0 0 6px rgba(0,0,0,0.6)';
+      } else {
+        header.style.backgroundColor = 'rgba(0,0,0,0)';
+        header.style.boxShadow = '0 0 6px rgba(0,0,0,0.0)';
+      }
     });
   });
 

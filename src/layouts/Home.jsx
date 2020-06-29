@@ -20,7 +20,7 @@ class Home extends React.PureComponent {
       <section>
         <Header />
 
-        <article className="d-flex mx-auto mb-5 mb-md-none flex-column flex-md-row-reverse p-none p-md-4 justify-content-between align-items-center introduction">
+        <article id="main" className="d-flex mx-auto mb-5 mb-md-none flex-column flex-md-row-reverse p-none p-md-4 justify-content-between align-items-center introduction">
 
           <figure className="col-12 col-md-6 d-flex justify-content-center align-items-center introduction__image">
             <img src={ImgStas} alt="Stats from this" />
