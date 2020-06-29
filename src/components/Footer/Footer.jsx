@@ -45,14 +45,14 @@ const Footer = () => (
 
     </div>
 
-    <nav className="d-flex flex-row flex-nowrap col-12 col-lg-4 m-4 row">
-      <ul className="d-flex flex-column align-items-start align-items-lg-start justify-content-start col-6 footer__nav">
+    <nav className="d-flex flex-row flex-nowrap justify-content-center align-items-start col-12 col-lg-4 m-4 row">
+      <ul className="d-flex flex-column align-items-start align-items-lg-start justify-content-start col-4 col-lg-6 footer__nav">
         <li className="py-2"><a aria-label="Go To Home" href="/">Home</a></li>
         <li className="py-2"><a aria-label="Go To Pricing" href="/">Pricing</a></li>
         <li className="py-2"><a aria-label="Go To Products" href="/">Products</a></li>
         <li className="py-2"><a aria-label="Go To About Us" href="/">About Us</a></li>
       </ul>
-      <ul className="d-flex flex-column align-items-start align-items-lg-start justify-content-start col-6 footer__nav">
+      <ul className="d-flex flex-column align-items-start align-items-lg-start justify-content-start col-4 col-lg-6 footer__nav">
         <li className="py-2"><a aria-label="Go To Careers" href="/">Careers</a></li>
         <li className="py-2"><a aria-label="Go To Conmmunity" href="/">Community</a></li>
         <li className="py-2"><a aria-label="Go To Privacy Policy" href="/">Privacy Policy</a></li>
