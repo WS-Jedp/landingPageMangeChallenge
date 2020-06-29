@@ -1,0 +1,26 @@
+@import '../styles/colors';
+@import '../styles/fonts';
+
+  
+.introduction, .advantages {
+  width: 85%;
+}
+
+.introduction {
+  
+  &__image{
+    position: relative;
+    max-width: 700px;
+    
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .introduction, .advantages {
+    width: 100%;
+  } 
+}

@@ -1,0 +1,31 @@
+@import '../../styles/colors';
+
+.header {
+  position: sticky;
+  height: 100px;
+  color: $color-secondary;
+  
+  &__skip-content{
+    position: absolute;
+    background-color: $color-main;
+    color: $color-white;
+    left: -200px;
+    transition: 0.3s ease-in-out;
+
+    &:focus{
+      left: 100px;
+    }
+  }
+
+  &__nav ul li a {
+    font-weight: 500;
+    color: $color-secondary;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-gray;
+    }
+  }
+}

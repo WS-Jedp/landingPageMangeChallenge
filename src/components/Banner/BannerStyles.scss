@@ -1,0 +1,14 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+.manage__banner{
+  position: relative;
+  width: 100%;
+  min-height: 210px;
+  background-color: $color-main;
+
+  h2{
+    color: $color-white;
+    max-width: 450px;
+  }
+}

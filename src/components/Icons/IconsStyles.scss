@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+
+.icons {
+  cursor: pointer;
+
+  
+  path {
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover{
+
+    path {
+      fill: $color-main;
+    }
+  }
+
+}

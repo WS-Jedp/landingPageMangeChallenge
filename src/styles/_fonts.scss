@@ -1,0 +1,36 @@
+@import './colors';
+
+$font-family: 'Be Vietnam', sans-serif;
+$font-size-normal: 1.8rem;
+$font-size-subtitle: 2.1rem;
+$font-size-title: 2.4rem;
+
+h1{
+  color: $color-secondary;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+h2{
+  color: $color-secondary;
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+
+p{
+  font-size: 2rem;
+  line-height: 3rem;
+  color: $color-gray;
+}
+
+@media screen and (max-width: 768px){
+  h1, h2 {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+
+  &__text{
+    text-align: center;
+  }
+  
+}

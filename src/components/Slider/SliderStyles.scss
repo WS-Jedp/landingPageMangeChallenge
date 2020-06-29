@@ -1,0 +1,19 @@
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+.slider {
+  width: 100%;
+
+  &__cards{
+    width: 100%;
+    padding: 6rem 0;
+    height: auto;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .slider{
+    width: 100%;
+  }
+}
