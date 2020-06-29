@@ -1,0 +1,55 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: $color-black;
+  min-height: 180px;
+  height: 180px;
+
+  &__icons {
+    height: 100%;
+  }
+
+  &__nav a{
+    color: $color-white;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+      color: $color-main;
+      text-decoration: none;
+    }
+  }
+
+  &__copy{
+    height: 100%;
+
+    input[type="text"] {
+      font-size: 1.6rem;
+      color: $color-secondary;
+
+      &:placeholder-shown {
+        font-size: 1.6rem;
+        color: $color-gray;
+      }
+    }
+  }
+  
+      small {
+        color: $color-gray;
+        width: auto;
+        font-size: 1.2rem;
+      }
+}
+
+@media screen and (max-width: 1200px){
+  .footer {
+    height: auto;
+    flex-direction: column-reverse !important;
+
+    small {
+      display: none;
+    }
+  }
+}

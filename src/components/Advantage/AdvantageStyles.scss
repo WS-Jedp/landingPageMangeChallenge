@@ -1,0 +1,46 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+.advantage {
+
+  &__title {
+
+    span {
+      min-height: 30px;
+      min-width: 60px;
+      background-color: $color-main;
+      color: $color-white;
+    }
+
+    h3{
+      color: $color-secondary;
+      font-weight: 900;
+    }
+  }
+
+  &__content{
+    padding-left: 7.3rem;
+    color: $color-gray;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .advantage {
+
+    &__title{
+      background-color: $color-lightgray;
+      height: auto;
+      padding: 0;
+
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__content{
+      padding: 0;
+      font-size: 1.6rem;
+    }
+  }
+}

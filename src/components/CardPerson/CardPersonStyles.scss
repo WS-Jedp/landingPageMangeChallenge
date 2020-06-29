@@ -1,0 +1,57 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+button{
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.card-person{
+  position: relative;
+  background-color: rgba(0,0,0,0.03);
+  min-width: 500px;
+  max-width: 600px;
+  min-height: 210px;
+
+  &__image{
+    position: absolute;
+    top: -45px;
+    width: 90px;
+    height: 90px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+
+  &__content{
+
+    h4 {
+      color: $color-secondary;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    q{
+      color: $color-gray;
+      line-height: 2.7rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card-person{
+    min-width: 330px;
+    max-width: 340px;
+
+    &__content {
+      q {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
