@@ -18,6 +18,7 @@ const Header = () => {
   useEffect(() => {
     const menuResponsive = document.getElementById('menu-responsive');
     const header = document.getElementById('header');
+    header.classList.add('animate-to-down');
 
     if (menuHandler) menuResponsive.style.bottom = '-60px';
     else menuResponsive.style.bottom = '-100%';
@@ -31,7 +32,7 @@ const Header = () => {
         header.style.boxShadow = '0 0 6px rgba(0,0,0,0.0)';
       }
     });
-  });
+  }, []);
 
   const handlerMenu = () => {
     if (menuHandler !== true) setMenuHandler(true);

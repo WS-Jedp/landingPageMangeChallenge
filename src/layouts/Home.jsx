@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 
 // Styles
@@ -15,18 +16,41 @@ import Banner from '../components/Banner/Banner';
 import Footer from '../components/Footer/Footer';
 
 class Home extends React.PureComponent {
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 70) {
+        const advantages = document.getElementsByClassName('advantage');
+        advantages[0].classList.add('animate-to-right');
+        advantages[1].classList.add('animate-to-right');
+        advantages[2].classList.add('animate-to-right');
+      }
+    });
+
+    const introImg = document.getElementsByClassName('introduction__image')[0];
+    const introCont = document.getElementsByClassName('introduction__content')[0];
+
+    introImg.classList.add('animate-to-left');
+    introCont.classList.add('animate-to-right');
+  }
+
   render() {
     return (
       <section>
         <Header />
 
+        {/* Background image */}
+        <svg xmlns="http://www.w3.org/2000/svg" className="bg-home">
+          <g fill="hsl(12, 88%, 59%)" fillRule="evenodd" opacity=".071" transform="translate(-171 -373)">
+            <rect width="310.431" height="708" x="1269" y="7" rx="155.215" transform="scale(1 -1) rotate(-45 552.684 0)" />
+          </g>
+        </svg>
         <article id="main" className="d-flex mx-auto mb-5 mb-md-none flex-column flex-md-row-reverse p-none p-md-4 justify-content-between align-items-center introduction">
 
           <figure className="col-12 col-md-6 d-flex justify-content-center align-items-center introduction__image">
             <img src={ImgStas} alt="Stats from this" />
           </figure>
 
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-md-5 introduction__content">
             <Content
               title="  Bring everyone together to build better products."
               content="Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view."
