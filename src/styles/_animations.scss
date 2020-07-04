@@ -1,0 +1,54 @@
+
+.animate-to-right{
+  animation-name: to-right;
+  animation-duration: .9s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes to-right{
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-to-left{
+  animation-name: to-left;
+  animation-duration: .9s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes to-left{
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-to-down{
+  animation-name: to-down;
+  animation-duration: .9s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}
+
+@keyframes to-down{
+  from{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
