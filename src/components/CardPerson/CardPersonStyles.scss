@@ -12,7 +12,8 @@ button{
   background-color: rgba(0,0,0,0.03);
   min-width: 500px;
   max-width: 600px;
-  min-height: 210px;
+  min-height: 240px;
+  max-height: 240px;
 
   &__image{
     position: absolute;
